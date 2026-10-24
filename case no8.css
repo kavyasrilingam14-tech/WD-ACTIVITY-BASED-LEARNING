@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5ef;
+    color: #26352d;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #173c35;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.header h1 {
+    font-size: 32px;
+    letter-spacing: 4px;
+}
+
+.header p {
+    color: #d9c7a2;
+    margin-top: 5px;
+}
+
+.hero {
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    color: white;
+    background: linear-gradient(
+        90deg,
+        rgba(14, 35, 30, 0.95),
+        rgba(14, 35, 30, 0.35)
+    ),
+    linear-gradient(135deg, #315f52, #c28c5b);
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.tagline {
+    color: #e5c68e;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d6ad70;
+    color: #173c35;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.about {
+    text-align: center;
+    padding: 55px 10%;
+}
+
+.about h2,
+.menu h2,
+.reviews h2,
+.booking h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    color: #626a64;
+}
+
+.menu {
+    padding: 55px 7%;
+    background-color: #e9eee8;
+    text-align: center;
+}
+
+.section-text {
+    color: #66746b;
+    margin-bottom: 30px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.food-card {
+    background-color: white;
+    padding: 25px 18px;
+    border-radius: 12px;
+    border-bottom: 4px solid #c49a61;
+    box-shadow: 0 5px 18px #00000010;
+    transition: transform 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-7px);
+}
+
+.food-icon {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.food-card h3 {
+    margin-bottom: 8px;
+}
+
+.food-card p {
+    font-size: 14px;
+    color: #6b746d;
+    min-height: 45px;
+}
+
+.price {
+    color: #a66b32;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+button {
+    background-color: #214c40;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #c18c4e;
+    color: #172b23;
+}
+
+.special {
+    background-color: #214c40;
+    color: white;
+    padding: 40px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.special h2 {
+    font-size: 34px;
+    margin: 8px 0;
+}
+
+.offer-code {
+    color: #e8c98e;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.special-icon {
+    font-size: 90px;
+}
+
+.chef {
+    text-align: center;
+    padding: 50px 15px;
+    background-color: #f1e4d0;
+}
+
+.chef h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.chef h3 {
+    color: #315d4d;
+    font-size: 23px;
+}
+
+.chef p {
+    margin-top: 8px;
+}
+
+.reviews {
+    padding: 55px 7%;
+    text-align: center;
+}
+
+.review-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.review-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px #00000010;
+}
+
+.review-card h4 {
+    margin-top: 15px;
+}
+
+.review-card span {
+    color: #c18c4e;
+    letter-spacing: 3px;
+}
+
+.booking {
+    background-color: #e7eee7;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.booking form {
+    max-width: 450px;
+    margin: 25px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking input,
+.booking select {
+    padding: 13px;
+    border: 1px solid #c6d0c8;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 15px;
+}
+
+#message {
+    color: #214c40;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #132d27;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+footer h2 {
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 7px;
+    color: #d6dfd8;
+}
+
+
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .review-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .hero {
+        padding: 45px 7%;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .special {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .special-icon {
+        font-size: 60px;
+    }
+    

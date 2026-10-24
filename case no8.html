@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skyline Bistro</title>
+    <link rel="stylesheet" href="case no8.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>SKYLINE BISTRO</h1>
+        <p>Good Food • Great Views • Beautiful Moments</p>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="tagline">A TASTE ABOVE THE ORDINARY</p>
+            <h2>Dining Under<br>the Open Sky</h2>
+            <p>Enjoy delicious food, refreshing drinks and unforgettable evenings.</p>
+            <a href="#menu" class="btn">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>Welcome to Skyline</h2>
+        <p>
+            Skyline Bistro offers a relaxing rooftop dining experience
+            with delicious dishes, friendly service and a beautiful atmosphere.
+            Every meal is prepared with care and fresh ingredients.
+        </p>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2>Our Signature Menu</h2>
+        <p class="section-text">Fresh flavours for every food lover</p>
+
+        <div class="menu-container">
+            <div class="food-card">
+                <div class="food-icon">🍕</div>
+                <h3>Italian Pizza</h3>
+                <p>Cheesy pizza with fresh vegetables.</p>
+                <div class="price">₹249</div>
+                <button onclick="orderFood('Italian Pizza')">Order Now</button>
+            </div>
+
+            <div class="food-card">
+                <div class="food-icon">🍔</div>
+                <h3>Classic Burger</h3>
+                <p>Juicy burger with crispy fries.</p>
+                <div class="price">₹179</div>
+                <button onclick="orderFood('Classic Burger')">Order Now</button>
+            </div>
+
+            <div class="food-card">
+                <div class="food-icon">🍝</div>
+                <h3>Creamy Pasta</h3>
+                <p>Rich, creamy pasta with herbs.</p>
+                <div class="price">₹219</div>
+                <button onclick="orderFood('Creamy Pasta')">Order Now</button>
+            </div>
+
+            <div class="food-card">
+                <div class="food-icon">🍰</div>
+                <h3>Chocolate Cake</h3>
+                <p>Soft chocolate cake for a sweet finish.</p>
+                <div class="price">₹129</div>
+                <button onclick="orderFood('Chocolate Cake')">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="special">
+        <div>
+            <p class="tagline">LIMITED TIME OFFER</p>
+            <h2>Sunset Special</h2>
+            <p>Get 20% OFF on selected dishes from 5 PM to 7 PM.</p>
+            <p class="offer-code">Use Code: SKY20</p>
+        </div>
+        <div class="special-icon">🌇</div>
+    </section>
+
+    <section class="chef">
+        <h2>Chef's Recommendation</h2>
+        <h3>Signature Skyline Platter</h3>
+        <p>A delicious combination of our chef's favourite flavours.</p>
+        <p class="price">Starting from ₹399</p>
+    </section>
+
+    <section class="reviews">
+        <h2>What Our Guests Say</h2>
+
+        <div class="review-container">
+            <div class="review-card">
+                <p>“Amazing food and a beautiful atmosphere!”</p>
+                <h4>— Priya</h4>
+                <span>★★★★★</span>
+            </div>
+
+            <div class="review-card">
+                <p>“A perfect place to spend an evening with friends.”</p>
+                <h4>— Rahul</h4>
+                <span>★★★★★</span>
+            </div>
+
+            <div class="review-card">
+                <p>“Great service and delicious desserts.”</p>
+                <h4>— Ananya</h4>
+                <span>★★★★☆</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking" id="booking">
+        <h2>Reserve Your Table</h2>
+        <p>Plan your next special evening with us.</p>
+
+        <form onsubmit="bookTable(event)">
+            <input type="text" id="guestName" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="date" required>
+            <select required>
+                <option value="">Number of Guests</option>
+                <option>1–2 Guests</option>
+                <option>3–4 Guests</option>
+                <option>5–8 Guests</option>
+            </select>
+            <button type="submit">Book My Table</button>
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    <footer>
+        <h2>SKYLINE BISTRO</h2>
+        <p>Where Every Meal Becomes a Memory.</p>
+        <p>📍 Hyderabad, India</p>
+        <p>📞 +91 98765 43210</p>
+        <p>© 2026 Skyline Bistro | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function orderFood(foodName) {
+            alert("You selected " + foodName + "!");
+        }
+
+        function bookTable(event) {
+            event.preventDefault();
+
+            let name = document.getElementById("guestName").value;
+
+            document.getElementById("message").textContent =
+                "Thank you, " + name +
+                "! Your booking request has been received.";
+        }
+    </script>
+
+</body>
+</html>

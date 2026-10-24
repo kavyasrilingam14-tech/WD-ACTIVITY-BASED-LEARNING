@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #26352d;
+    background: #f5f8f3;
+}
+
+header {
+    background: #173d2b;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #a8e6a1;
+}
+
+.hero {
+    min-height: 400px;
+    background: linear-gradient(#0006, #0007),
+    url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1400") center/cover;
+    color: white;
+    text-align: center;
+    padding: 120px 15px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 28px;
+    font-size: 17px;
+}
+
+.btn {
+    display: inline-block;
+    background: #e9a23b;
+    color: #172b20;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#places {
+    padding: 45px 7%;
+    text-align: center;
+}
+
+#places h2, .about h2, .contact h2 {
+    margin-bottom: 25px;
+    color: #245638;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 290px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px #0002;
+    padding-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px;
+}
+
+.card p {
+    padding: 0 15px;
+    line-height: 1.5;
+}
+
+.card h4 {
+    color: #d17a16;
+    margin-top: 15px;
+}
+
+.about, .contact {
+    text-align: center;
+    padding: 40px 15px;
+    line-height: 1.8;
+}
+
+.about {
+    background: #e4efdf;
+}
+
+.contact {
+    background: #f5f8f3;
+}
+
+footer {
+    background: #173d2b;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
